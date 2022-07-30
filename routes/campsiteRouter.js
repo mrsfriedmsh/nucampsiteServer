@@ -67,7 +67,7 @@ campsiteRouter.route('/:campsiteId')
     .then(response => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.json(campsite);
+        res.json(response);
     })
     .catch(err => next(err)); 
 });
