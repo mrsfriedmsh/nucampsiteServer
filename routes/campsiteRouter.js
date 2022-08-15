@@ -4,8 +4,6 @@ const authenticate = require('../authenticate');
 const cors = require('./cors');
 const campsiteRouter = express.Router();
 
-const mongoose = require('mongoose');
-
 campsiteRouter.route('/')
 .options(cors.corsWithOptions, (req, res) => res.sendStatus(200))
 .get(cors.cors, (req, res, next) => {
